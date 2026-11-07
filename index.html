@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeStart — курс Frontend</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#">Code<span>Start</span></a>
+      <nav class="nav">
+        <a href="#about">О курсе</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#program">Программа</a>
+      </nav>
+      <a class="button button--small" href="#signup">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Frontend с нуля</p>
+          <h1>Создай свой первый сайт за 4 недели</h1>
+          <p class="hero__text">Понятные уроки, много практики и готовый проект в конце обучения.</p>
+          <div class="hero__actions">
+            <a class="button" href="#signup">Начать обучение</a>
+            <a class="button button--light" href="#program">Смотреть программу</a>
+          </div>
+        </div>
+        <img class="hero__image" src="assets/hero.svg" alt="Ноутбук с веб-страницей">
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Почему CodeStart</p>
+        <h2 class="section-title">Всё необходимое для хорошего старта</h2>
+        <div class="benefits__list">
+          <article class="card">
+            <img src="assets/icon-practice.svg" alt="Иконка практики">
+            <h3>Много практики</h3>
+            <p>На каждом уроке создаём реальные элементы веб-страниц.</p>
+          </article>
+          <article class="card">
+            <img src="assets/icon-simple.svg" alt="Иконка простого обучения">
+            <h3>Понятно новичкам</h3>
+            <p>Идём от простых тегов к полноценной Landing Page.</p>
+          </article>
+          <article class="card">
+            <img src="assets/icon-project.svg" alt="Иконка проекта">
+            <h3>Готовый проект</h3>
+            <p>К концу курса у тебя будет собственный сайт для портфолио.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="program" id="program">
+      <div class="container program__inner">
+        <div class="program__image-wrap">
+          <img class="program__image" src="assets/code.svg" alt="Пример кода на экране">
+        </div>
+        <div class="program__content">
+          <p class="eyebrow">Что изучим</p>
+          <h2>От HTML до адаптивной страницы</h2>
+          <div class="program__items">
+            <div class="program__item"><strong>01</strong><span>HTML — структура страницы</span></div>
+            <div class="program__item"><strong>02</strong><span>CSS — оформление и Box Model</span></div>
+            <div class="program__item"><strong>03</strong><span>Flexbox — расположение элементов</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="theme-control">
+    <p>Здесь можно менять тему сайта.</p>
+    <button id="themeButton">Сменить тему</button>
+    </div>
+    
+    <section class="signup" id="signup">
+      <div class="container signup__box">
+        <div>
+          <p class="eyebrow">Готов начать?</p>
+          <h2>Сделай первый шаг во Frontend</h2>
+          <p>Оставь заявку и начни создавать сайты своими руками.</p>
+        </div>
+        <a class="button button--white" href="mailto:hello@codestart.dev">Записаться на курс</a>
+        <!-- <input type="text" placeholder="Name"> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="logo logo--footer" href="#">Code<span>Start</span></a>
+        <p>Практический курс Frontend для начинающих.</p>
+      </div>
+      <div class="footer__contacts">
+        <strong>Контакты</strong>
+        <a href="mailto:hello@codestart.dev">hello@codestart.dev</a>
+        <a href="tel:+996700123456">+996 700 123 456</a>
+      </div>
+      <div class="footer__contacts">
+        <strong>Соцсети</strong>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

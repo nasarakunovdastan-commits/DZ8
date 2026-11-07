@@ -1,0 +1,296 @@
+:root {
+  --program-color: #4f6df5;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 1240px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background-color: #ffffff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid #e5e9f2;
+  background-color: #ffffff;
+}
+.header__inner {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #172033;
+}
+.logo span {
+  color: var(--program-color);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-size: 16px;
+}
+.button {
+  display: inline-block;
+  padding: 16px 26px;
+  border-radius: 10px;
+  background-color: var(--program-color);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  transition: 300ms;
+}
+.button:not(.button--light, .button--white) :hover {
+  background-color: #798bda;
+}
+.button:not(.button--light, .button--white) :active {
+  background-color: #1231be;
+}
+.button--small {
+  padding: 12px 20px;
+}
+.button--light {
+  background-color: #eef1ff;
+  color: #4057ca;
+}
+.button--light:hover {
+ background-color: #c9d0f3;
+}
+.button--white {
+  background-color: #ffffff;
+  color: #3349bd;
+}
+.button--white:hover {
+  background-color: #d6d6d6;
+}
+.hero {
+  background-color: #f5f7ff;
+  padding: 76px 0;
+}
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.hero__content {
+  width: 535px;
+}
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--program-color);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+/* .eyebrow::before {
+  content: url('../assets/icon-simple.svg');
+}
+.eyebrow::after {
+  content: "";
+} */
+.eyebrow--center {
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.06;
+}
+.hero__text {
+  margin: 24px 0 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #59647a;
+}
+.hero__actions {
+  display: flex;
+  gap: 14px;
+}
+.hero__image {
+  width: 500px;
+  height: 390px;
+}
+.benefits {
+  padding: 82px 0;
+}
+.section-title {
+  margin: 0 auto 42px;
+  max-width: 700px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.2;
+}
+.benefits__list {
+  display: flex;
+  gap: 24px;
+}
+.card {
+  width: 377px;
+  padding: 30px;
+  border: 1px solid #dfe4ef;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.card img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+}
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+.card p {
+  margin: 0;
+  color: #687287;
+  line-height: 1.55;
+}
+.program {
+  padding: 78px 0;
+  background-color: #f8f9fc;
+}
+.program__inner {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+.program__image-wrap {
+  width: 520px;
+  padding: 34px;
+  border-radius: 20px;
+  background-color: #e9edff;
+}
+.program__image {
+  width: 452px;
+  height: 330px;
+}
+.program__content {
+  width: 520px;
+}
+.program__content h2 {
+  margin: 0 0 28px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.program__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.program__item, input {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 18px;
+  border: 1px solid #dde2ef;
+  border-radius: 12px;
+  background-color: #ffffff;
+    color: black;
+    font-family: Arial;
+    text-align: center;
+    transition: 0.3s;
+}
+input:focus {
+  outline: 1px solid red;
+}
+input::placeholder {
+  font-size: 12px;
+}
+.program__item strong {
+  color: var(--program-color);
+  font-size: 18px;
+}
+.signup {
+  padding: 80px 0;
+}
+.signup__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 42px 48px;
+  border-radius: 20px;
+  background-color: var(--program-color);
+  color: #ffffff;
+}
+.signup__box .eyebrow {
+  color: #dfe5ff;
+}
+.signup__box h2 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+.signup__box p {
+  margin: 0;
+  color: #e9edff;
+}
+.footer {
+  padding: 46px 0;
+  background-color: #172033;
+  color: #cbd2df;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.logo--footer {
+  color: #ffffff;
+}
+.footer p {
+  width: 320px;
+  line-height: 1.5;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__contacts strong {
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+.theme-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 30px auto;
+}
+.theme-control p {
+  text-align: center;
+  margin: 0;
+}
+/* Урок 6: адаптивные стили намеренно отсутствуют. */
